@@ -1,21 +1,31 @@
 package 'tree' do
    action :install
 end
-package 'vim-enhanced'
+
+package 'vim'
+
 package 'emacs'
+
 
 package 'ntp' do
    action :install
 end
+
+
+
 
 package 'git' do
    action:install
 end
 
 
+
+
 service 'ntpd' do
     action [:enable, :start]
 end
+
+
 
 
 file 'etc/motd' do
