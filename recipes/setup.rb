@@ -1,9 +1,7 @@
 package 'tree' do
    action :install
 end
-
-
-
+package 'vim-enhanced'
 package 'ntp' do
    action :install
 end
